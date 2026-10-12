@@ -3,6 +3,13 @@
 <title>Brett Schreiber's hompepage</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+body {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding-inline: 1rem;
+  font-family: sans-serif;
+}
+
 img { max-width: 100%; }
 </style>
 </head>
@@ -18,41 +25,121 @@ Philadelphia.
 <h2>Professional experience</h2>
 
 <p>
-Since 2022, I have been a Senior Software Engineer for the City of Philadelphia,
-leading backend development on the following two web apps:
+Since 2022, I have been a Senior Software Engineer for the City of Philadelphia.
+I was the lead backend developer on the following web apps:
 </p>
 
-<ol>
+<dl>
 
-<li>
-<a href="https://lobbying.phila.gov">lobbying.phila.gov</a>: A public database
-of lobbying activity in Philadelphia in compliace with the City's Lobbying Law
-and enforced by its
+<dt>
+<a href="https://lobbying.phila.gov">lobbying.phila.gov</a>
+</dt>
+<dd>
+A public database of lobbying activity in Philadelphia in compliace with the
+City's Lobbying Law and enforced by its
 <a href="https://www.phila.gov/departments/board-of-ethics/">Board of
-Ethics</a>, released September 2026.
-</li>
+Ethics</a>. Released September 2026.
+</dd>
 
-<li>
-<a href="public-safety-reports.phila.gov">public-safety-reports.phila.gov</a>:
+<br />
+
+<dt>
+<a href="public-safety-reports.phila.gov">public-safety-reports.phila.gov</a>
+</dt>
+<dd>
 An online portal for requesting a digital copy of a crash or fire report from
 Philadelphia's
 <a href="https://www.phila.gov/departments/department-of-records/">Department of
-Records</a>, released January 2024.
-</li>
+Records</a>. Requires creating an account. Released January 2024.
+</dd>
 
-</ol>
+</dl>
 
 <p>
 Prior to working at the City I was a full-stack developer at
 <a href="https://investor.vanguard.com/">The Vanguard Group</a> in Malvern, PA.
 </p>
 
-<h2>Personal projects</h2>
+<h2>Personal projects and demos</h2>
 
-<p>
-I am particularly interested in programming language theory, computational
-complexity, automated theorem proving, and relational programming in miniKanren.
-</p>
+<dl>
+
+<dt>
+<a href="https://raw.githubusercontent.com/schreiberbrett/cool-relations/refs/heads/main/cool-relations.scm">cool-relations.scm</a>
+</dt>
+<dd>
+One of my main interests in computing is
+relational programming in <a href="https://minikanren.org">miniKanren</a>. This
+commented Scheme source file contains the relations that I have been interested
+in since I was first introduced to miniKanren in 2019.
+</dd>
+
+<br />
+
+<dt>
+<a href="https://schreiberbrett.github.io/box-packing">
+schreiberbrett.github.io/box-packing</a>
+</dt>
+<dd>
+Create arbitrary Tetris-like pieces using the grid of buttons and the "Add"
+button, then click the "Solve" button to find the smallest rectangle that fits
+all the pieces. Source code available at
+<a href="https://www.github.com/schreiberbrett/box-packing">
+github.com/schreiberbrett/box-packing</a>.
+</dd>
+
+<br />
+
+<dt>
+<a href="https://schreiberbrett.github.io/experiments/mindepth.html">
+schreiberbrett.github.io/experiments/mindepth.html</a>
+</dt>
+<dd>
+A commented HTML file demonstrating that every predicate over unsigned integers
+can be represented as a NAND circuit. (Although finding such a circuit can be
+extremely inefficient!)
+</dd>
+
+<br />
+
+<dt>
+<a href="https://schreiberbrett.github.io/translate-khmer">
+schreibebrett.github.io/translate-khmer</a>
+</dt>
+<dd>
+A web app for translating Khmer-language text, which often does not contain
+spaces. I made this for myself before learning that there is
+<a href="https://medium.com/@phylypo/nlp-text-segmentation-using-dictionary-based-algorithms-6d0a45a76c08">
+prior work on the Khmer word segmentation problem</a>. Source code and a
+description of the greedy algorithm is hosted at
+<a href="https://www.github.com/schreiberbrett/translate-khmer">
+github.com/schreiberbrett/translate-khmer</a>.
+</dd>
+
+<br />
+
+<dt>
+<a href="https://nchlsb.github.io/early-calc">nchlsb.github.io/early-calc</a>
+</dt>
+<dd>
+An interactive webpage I made with my friend
+<a href="https://www.linkedin.com/in/nchlsbrdy">Nick Brady</a> for visualizing
+derivatives and integrals of common functions.
+</dd>
+
+<br />
+
+<dt>
+<a href="https://nchlsb.github.io/ChemicalEquationBalancer">
+nchlsb.github.io/ChemicalEquationBalancer</a>
+</dt>
+<dd>
+Another joint project with Nick Brady. You are given a random chemical equation
+and must increment or decrement each coefficient until the equation is balanced.
+The type describing chemical formulas is recursive!
+</dd>
+
+</dl>
 
 <h2>Publications</h2>
 <p>
@@ -87,21 +174,52 @@ Workshop</a>:
 </dl>
 
 <p>
-Brysen Pfingsten gave an amazing presentation of our work, available at
+Watch Brysen Pfingsten's presentation of our work at
 <a href="https://www.youtube.com/watch?v=47rwbYSXSH4">
 https://www.youtube.com/watch?v=47rwbYSXSH4</a>.
 </p>
 
 <h2>Other</h2>
 
-<p>
-I made a bilingual, mobile-friendly menu for my fiancee's Cambodian restaurant,
-available online at <a href="https://schreiberbrett.github.io/menu">
-schreiberbrett.github.io/menu</a>.
-</p>
+<dl>
 
+<dt>
+<a href="https://schreiberbrett.github.io/menu">
+schreiberbrett.github.io/menu</a>
+</dt>
+<dd>
+A bilingual menu for my fiancee's Cambodian restaurant.
+</dd>
 
+<br />
 
+<dt>
+<a href="https://schreiberbrett.github.io/bitexts/tofu">
+schreiberbrett.github.io/bitexts/tofu</a>
+</dt>
+<dd>
+A readable interlinear translation of a Cambodian children's story,
+<a href="https://www.youtube.com/watch?v=CZR6VzY_aUk">"The Spilled Tofu"</a>. I
+could only make this after many online lessons with
+<a href="https://khmerlessons.com/teacher/profile/147">Peter Sot Pheany</a>.
+</dd>
+
+<br />
+
+<dt>
+<a href="https://github.com/schreiberbrett/minikanren-hangout-transcripts">
+github.com/schreiberbrett/minikanren-hangout-transcripts</a>
+</dt>
+<dd>
+An ongoing project to transcribe Will Byrd's
+<a href="https://www.youtube.com/playlist?list=PLO4TbomOdn2eGFBHHHZpwo2o82e8Tv6gI">
+2013 miniKanren hangouts</a>. In college I worked as a human transcriber for the
+University of Pittsburgh's
+<a href="https://ucsur.pitt.edu/programs/qualitative-data-analysis-program-qdap">
+Qualitative Data Analysis Program (QDAP)</a>. 
+</dd>
+
+</dl>
 
 <hr />
 Last updated October 2026.
